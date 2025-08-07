@@ -1,0 +1,13 @@
+{
+    "cookies": [
+        {"domain": ".tiktok.com", "path": "/", "name": "ttwid", "value": "1|LeyKDpjVIb2-OANsUJoa4zGv4oys28gyo_QpbY1Qzb4|1754141724|3414336327f596b4f08a1acff9b4659dcef5dca3733c56525814b0f9576d6ec0", "secure": true, "expires": 1754137990},
+	{"domain": ".tiktok.com", "path": "/", "name": "cmpl_token", "value": "AgQQAPP4F-RO0rhAeOZ8vN0B8h8PaOkW_7pzYN2BRA", "secure": true, "expires": 1754137990},
+        {"domain": ".tiktok.com", "path": "/", "name": "s_v_web_id", "value": "verify_mdu22ovc_r1LPas2U_5w9D_4Yvt_9rXJ_57thMMbJLhPc", "secure": true, "expires": 1754137990},
+        {"domain": ".tiktok.com", "path": "/", "name": "sessionid", "value": "ed47810fa6b87f5edc58935c33b269c7", "secure": true, "expires": 1754137990},
+	{"domain": ".tiktok.com", "path": "/", "name": "sessionid_ss", "value": "ed47810fa6b87f5edc58935c33b269c7", "secure": true, "expires": 1754137990},
+        {"domain": ".tiktok.com", "path": "/", "name": "tt_csrf_token", "value": "5N3K0TD8-tP21P_9RZJ1oTDbJuwU3h7wxLP8", "secure": true, "expires": 1754137990},
+        {"domain": ".tiktok.com", "path": "/", "name": "tt_chain_token", "value": "OCOaPhzZcLLJv/wG8Wl5Xw==", "secure": true, "expires": 1754137990},
+	{"domain": ".tiktok.com", "path": "/", "name": "tt-target-idc-sign", "value": "YpAGl-A0QRcrtn-dFAxLiBd0BjG9N24b65JBI-bHLnQuAvz68HY66v2yRvNUeHIifAog64Y0BIJJf7ZJ2ktJl7jWG-G8mfurrvhfxb6G6N6lFgG1PKrL0Vwwj_jgcv-Jdb3O-4ebRLCBsyHQEPxcofwQKCS9pe23Fk-jxnhl7NJA97xiBJvcOkfHW8PVv9hfDkKt-HkPCl6pYVAbbVHpRLUb3O8zE0eYRfqXQhirTCc7yES1hJAeUP5eDgAuMMJ7EQ-9E9nF1wybTW703bc5vpynSLPQaSleFI8Ekz9RAhfWC7yiBLeaSzMtjlt1uVIo-6ib-4Xac_3zSd1OL6M7K1hdTHMU5-zFasDMzdDy4GuXtyQdRVW4Ho0AcSz_oqQ_blbDtkHnkDfBZZ1p9bc0VWnYvc40EgbNkD__7XSf-ObCKMvuyhdA--YFg3OBy3TywUtip6ajRHi0vHbJnDkuukvIUO6pOim7lJH4uFR5OIb1VER-F9eRH9C2DUaj9_HN", "secure": true, "expires": 1754137990},
+        {"domain": ".tiktok.com", "path": "/", "name": "msToken", "value": "P9LoYM8w4ngxzglmt5atlIkwJV0ob1eyrV-yrxNyomLehr3BGCkQjYrXcRBEZe-eKO-46tTV3kF6dgce2eOkF1UgH5IRhcd607eNziw3b9A2d5tmt5k4-ylGB0W4tk23SlZErRe98QT8", "secure": true, "expires": 1754137990}
+    ]
+}

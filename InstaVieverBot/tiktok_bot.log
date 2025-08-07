@@ -1,0 +1,402 @@
+2025-08-02 23:25:42,134 - __main__ - INFO - Starting imports in main.py...
+2025-08-02 23:25:42,134 - __main__ - INFO - os imported
+2025-08-02 23:25:42,138 - __main__ - INFO - json imported
+2025-08-02 23:25:42,138 - __main__ - INFO - time imported
+2025-08-02 23:25:42,407 - __main__ - INFO - telegram imported
+2025-08-02 23:25:42,453 - __main__ - INFO - telegram.ext imported
+2025-08-02 23:25:42,463 - __main__ - INFO - tenacity imported
+2025-08-02 23:25:42,949 - __main__ - INFO - tiktok_downloader imported
+2025-08-02 23:25:43,270 - __main__ - INFO - instagram_downloader imported
+2025-08-02 23:25:43,599 - __main__ - INFO - pinterest_downloader imported
+2025-08-02 23:25:43,600 - __main__ - INFO - error_handler imported
+2025-08-02 23:25:43,600 - __main__ - INFO - utils imported
+2025-08-02 23:25:43,600 - __main__ - INFO - telegram.error imported
+2025-08-02 23:27:01,085 - __main__ - INFO - Starting imports in main.py...
+2025-08-02 23:27:02,844 - __main__ - INFO - os imported
+2025-08-02 23:27:04,008 - __main__ - INFO - json imported
+2025-08-02 23:27:04,952 - __main__ - INFO - time imported
+2025-08-02 23:27:08,016 - __main__ - INFO - telegram imported
+2025-08-02 23:27:14,249 - __main__ - INFO - telegram.ext imported
+2025-08-02 23:27:15,778 - __main__ - INFO - tenacity imported
+2025-08-02 23:27:20,677 - __main__ - INFO - tiktok_downloader imported
+2025-08-02 23:27:25,007 - __main__ - INFO - instagram_downloader imported
+2025-08-02 23:27:28,550 - __main__ - INFO - pinterest_downloader imported
+2025-08-02 23:27:31,683 - __main__ - INFO - error_handler imported
+2025-08-02 23:27:38,396 - __main__ - INFO - utils imported
+2025-08-02 23:27:40,051 - __main__ - INFO - telegram.error imported
+2025-08-02 23:28:24,162 - __main__ - INFO - Starting imports in main.py...
+2025-08-02 23:28:24,977 - __main__ - INFO - os imported
+2025-08-02 23:28:25,851 - __main__ - INFO - json imported
+2025-08-02 23:28:28,435 - __main__ - INFO - time imported
+2025-08-02 23:28:29,768 - __main__ - INFO - telegram imported
+2025-08-02 23:28:30,799 - __main__ - INFO - telegram.ext imported
+2025-08-02 23:28:31,732 - __main__ - INFO - tenacity imported
+2025-08-02 23:28:32,635 - __main__ - INFO - tiktok_downloader imported
+2025-08-02 23:28:33,518 - __main__ - INFO - instagram_downloader imported
+2025-08-02 23:28:34,442 - __main__ - INFO - pinterest_downloader imported
+2025-08-02 23:28:35,272 - __main__ - INFO - error_handler imported
+2025-08-02 23:28:36,204 - __main__ - INFO - utils imported
+2025-08-02 23:28:37,130 - __main__ - INFO - telegram.error imported
+2025-08-02 23:29:25,219 - __main__ - INFO - Starting imports in main.py...
+2025-08-02 23:29:26,661 - __main__ - INFO - os imported
+2025-08-02 23:29:27,050 - __main__ - INFO - json imported
+2025-08-02 23:29:27,371 - __main__ - INFO - time imported
+2025-08-02 23:29:27,639 - __main__ - INFO - telegram imported
+2025-08-02 23:29:28,179 - __main__ - INFO - telegram.ext imported
+2025-08-02 23:29:28,235 - __main__ - INFO - tenacity imported
+2025-08-02 23:29:28,306 - __main__ - INFO - tiktok_downloader imported
+2025-08-02 23:29:28,373 - __main__ - INFO - instagram_downloader imported
+2025-08-02 23:29:28,428 - __main__ - INFO - pinterest_downloader imported
+2025-08-02 23:29:28,473 - __main__ - INFO - error_handler imported
+2025-08-02 23:29:28,555 - __main__ - INFO - utils imported
+2025-08-02 23:29:28,597 - __main__ - INFO - telegram.error imported
+2025-08-02 23:29:30,076 - __main__ - INFO - Starting imports in main.py...
+2025-08-02 23:29:30,126 - __main__ - INFO - os imported
+2025-08-02 23:29:30,207 - __main__ - INFO - json imported
+2025-08-02 23:45:05,318 - __main__ - INFO - Starting imports in main.py...
+2025-08-02 23:45:05,318 - __main__ - INFO - os imported
+2025-08-02 23:45:05,321 - __main__ - INFO - json imported
+2025-08-02 23:45:05,322 - __main__ - INFO - time imported
+2025-08-02 23:45:05,587 - __main__ - INFO - telegram imported
+2025-08-02 23:45:05,631 - __main__ - INFO - telegram.ext imported
+2025-08-02 23:45:05,642 - __main__ - INFO - tenacity imported
+2025-08-02 23:45:06,095 - __main__ - INFO - tiktok_downloader imported
+2025-08-02 23:45:06,413 - __main__ - INFO - instagram_downloader imported
+2025-08-02 23:45:06,728 - __main__ - INFO - pinterest_downloader imported
+2025-08-02 23:45:06,729 - __main__ - INFO - error_handler imported
+2025-08-02 23:45:06,729 - __main__ - INFO - utils imported
+2025-08-02 23:45:06,729 - __main__ - INFO - telegram.error imported
+2025-08-02 23:45:06,729 - __main__ - INFO - Executing main()...
+2025-08-02 23:45:06,729 - __main__ - INFO - Entering main function...
+2025-08-02 23:45:06,729 - __main__ - INFO - Building Application...
+2025-08-02 23:45:06,997 - __main__ - INFO - Application built successfully!
+2025-08-02 23:45:06,998 - __main__ - INFO - Handlers added, starting polling...
+2025-08-02 23:45:07,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getMe "HTTP/1.1 200 OK"
+2025-08-02 23:45:07,473 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-02 23:45:07,476 - telegram.ext.Application - INFO - Application started
+2025-08-02 23:45:17,712 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:45:27,630 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:45:27,630 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-02 23:45:27,631 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-02 23:45:27,632 - __main__ - INFO - Polling started!
+2025-08-02 23:50:30,588 - __main__ - INFO - Starting imports in main.py...
+2025-08-02 23:50:30,588 - __main__ - INFO - os imported
+2025-08-02 23:50:30,591 - __main__ - INFO - json imported
+2025-08-02 23:50:30,591 - __main__ - INFO - time imported
+2025-08-02 23:50:30,876 - __main__ - INFO - telegram imported
+2025-08-02 23:50:30,930 - __main__ - INFO - telegram.ext imported
+2025-08-02 23:50:30,945 - __main__ - INFO - tenacity imported
+2025-08-02 23:50:31,558 - __main__ - INFO - tiktok_downloader imported
+2025-08-02 23:50:31,973 - __main__ - INFO - instagram_downloader imported
+2025-08-02 23:50:32,377 - __main__ - INFO - pinterest_downloader imported
+2025-08-02 23:50:32,377 - __main__ - INFO - error_handler imported
+2025-08-02 23:50:32,377 - __main__ - INFO - utils imported
+2025-08-02 23:50:32,378 - __main__ - INFO - telegram.error imported
+2025-08-02 23:50:32,378 - __main__ - INFO - Executing main()...
+2025-08-02 23:50:32,378 - __main__ - INFO - Entering main function...
+2025-08-02 23:50:32,378 - __main__ - INFO - Building Application...
+2025-08-02 23:50:32,670 - __main__ - INFO - Application built successfully!
+2025-08-02 23:50:32,670 - __main__ - INFO - Handlers added, starting polling...
+2025-08-02 23:50:33,004 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getMe "HTTP/1.1 200 OK"
+2025-08-02 23:50:33,106 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-02 23:50:33,108 - telegram.ext.Application - INFO - Application started
+2025-08-02 23:50:43,305 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:50:53,381 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:50:57,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:50:57,237 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:51:07,103 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:07,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:07,147 - __main__ - INFO - Отримано повідомлення: Надіслати посилання, chat_type=supergroup
+2025-08-02 23:51:07,410 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:51:17,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:27,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:36,113 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:36,117 - __main__ - INFO - Отримано повідомлення: https://www.instagram.com/p/DM0baIDt_m7/?utm_source=ig_web_copy_link, chat_type=supergroup
+2025-08-02 23:51:36,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:51:36,304 - __main__ - INFO - Запит до instagram: 1/50
+2025-08-02 23:51:41,683 - instagrapi - INFO - https://i.instagram.com/api/v1/launcher/sync/
+2025-08-02 23:51:42,127 - private_request - INFO - Kubgodua [403] POST https://i.instagram.com/api/v1/launcher/sync/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-08-02 23:51:42,127 - instagram_downloader - ERROR - Помилка instagrapi: {"message":"CSRF token missing or incorrect","status":"fail"}
+2025-08-02 23:51:42,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:51:42,434 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_application.py", line 1311, in process_update
+    await coroutine
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_handlers/basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/main.py", line 299, in handle_message
+    await asyncio.sleep(get_random_delay())
+          ^^^^^^^
+NameError: name 'asyncio' is not defined. Did you forget to import 'asyncio'
+2025-08-02 23:51:46,227 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:56,359 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:59,538 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:51:59,544 - __main__ - INFO - Отримано повідомлення: https://www.instagram.com/p/DM0ZDslN7K4/?utm_source=ig_web_copy_link, chat_type=supergroup
+2025-08-02 23:51:59,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:51:59,844 - __main__ - INFO - Запит до instagram: 2/50
+2025-08-02 23:52:01,848 - instagrapi - INFO - https://i.instagram.com/api/v1/launcher/sync/
+2025-08-02 23:52:02,197 - private_request - INFO - Kubgodua [403] POST https://i.instagram.com/api/v1/launcher/sync/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-08-02 23:52:02,197 - instagram_downloader - ERROR - Помилка instagrapi: {"message":"CSRF token missing or incorrect","status":"fail"}
+2025-08-02 23:52:02,298 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:52:02,299 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_application.py", line 1311, in process_update
+    await coroutine
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_handlers/basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/main.py", line 299, in handle_message
+    await asyncio.sleep(get_random_delay())
+          ^^^^^^^
+NameError: name 'asyncio' is not defined. Did you forget to import 'asyncio'
+2025-08-02 23:52:09,591 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:52:18,220 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:52:18,226 - __main__ - INFO - Отримано повідомлення: https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840?is_from_webapp=1&sender_device=pc, chat_type=supergroup
+2025-08-02 23:52:18,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:52:18,483 - __main__ - INFO - Запит до tiktok: 1/500
+2025-08-02 23:52:18,483 - tiktok_downloader - INFO - Файл InstaVieverBot/cookies.txt уже існує і є дійсним
+2025-08-02 23:52:18,485 - tiktok_downloader - INFO - Використовуємо тимчасовий файл cookies: /tmp/tmpn6on0m34.txt
+2025-08-02 23:52:18,485 - tiktok_downloader - INFO - yt-dlp: Починаємо завантаження для https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840?is_from_webapp=1&sender_device=pc
+2025-08-02 23:52:23,318 - tiktok_downloader - INFO - yt-dlp: Відео збережено як InstaVieverBot/temp/temp_video_-3562253455739310821_ytdlp.mp4
+2025-08-02 23:52:23,320 - tiktok_downloader - INFO - Час виконання yt-dlp для https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840?is_from_webapp=1&sender_device=pc: 4.84 секунд
+2025-08-02 23:52:23,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:52:24,441 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendVideo "HTTP/1.1 200 OK"
+2025-08-02 23:52:24,447 - __main__ - INFO - Відео успішно надіслано для https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840?is_from_webapp=1&sender_device=pc
+2025-08-02 23:52:24,449 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_application.py", line 1311, in process_update
+    await coroutine
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_handlers/basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/main.py", line 299, in handle_message
+    await asyncio.sleep(get_random_delay())
+          ^^^^^^^
+NameError: name 'asyncio' is not defined. Did you forget to import 'asyncio'
+2025-08-02 23:52:28,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:52:38,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:52:48,589 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:52:58,725 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:04,428 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:04,431 - __main__ - INFO - Отримано повідомлення: https://www.tiktok.com/@ugol_s1/video/7516610267996753174?is_from_webapp=1&sender_device=pc, chat_type=supergroup
+2025-08-02 23:53:04,763 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:53:04,774 - __main__ - INFO - Запит до tiktok: 2/500
+2025-08-02 23:53:04,774 - tiktok_downloader - INFO - Файл InstaVieverBot/cookies.txt уже існує і є дійсним
+2025-08-02 23:53:04,775 - tiktok_downloader - INFO - Використовуємо тимчасовий файл cookies: /tmp/tmpqr11eudo.txt
+2025-08-02 23:53:04,786 - tiktok_downloader - INFO - yt-dlp: Починаємо завантаження для https://www.tiktok.com/@ugol_s1/video/7516610267996753174?is_from_webapp=1&sender_device=pc
+2025-08-02 23:53:07,601 - tiktok_downloader - INFO - yt-dlp: Відео збережено як InstaVieverBot/temp/temp_video_3398717823569827945_ytdlp.mp4
+2025-08-02 23:53:07,603 - tiktok_downloader - INFO - Час виконання yt-dlp для https://www.tiktok.com/@ugol_s1/video/7516610267996753174?is_from_webapp=1&sender_device=pc: 2.83 секунд
+2025-08-02 23:53:07,860 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:53:09,523 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendVideo "HTTP/1.1 200 OK"
+2025-08-02 23:53:09,533 - __main__ - INFO - Відео успішно надіслано для https://www.tiktok.com/@ugol_s1/video/7516610267996753174?is_from_webapp=1&sender_device=pc
+2025-08-02 23:53:09,536 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_application.py", line 1311, in process_update
+    await coroutine
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_handlers/basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/main.py", line 299, in handle_message
+    await asyncio.sleep(get_random_delay())
+          ^^^^^^^
+NameError: name 'asyncio' is not defined. Did you forget to import 'asyncio'
+2025-08-02 23:53:14,594 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:24,731 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:34,868 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:44,932 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:54,998 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:56,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:53:56,320 - __main__ - INFO - Отримано повідомлення: https://www.instagram.com/p/DMuhUbjoTmE/?utm_source=ig_web_copy_link, chat_type=supergroup
+2025-08-02 23:53:56,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:53:56,676 - __main__ - INFO - Запит до instagram: 3/50
+2025-08-02 23:54:01,010 - instagrapi - INFO - https://i.instagram.com/api/v1/launcher/sync/
+2025-08-02 23:54:01,824 - private_request - INFO - Kubgodua [403] POST https://i.instagram.com/api/v1/launcher/sync/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-08-02 23:54:01,835 - instagram_downloader - ERROR - Помилка instagrapi: {"message":"CSRF token missing or incorrect","status":"fail"}
+2025-08-02 23:54:02,318 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-02 23:54:02,332 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_application.py", line 1311, in process_update
+    await coroutine
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/telegram/ext/_handlers/basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/main.py", line 299, in handle_message
+    await asyncio.sleep(get_random_delay())
+          ^^^^^^^
+NameError: name 'asyncio' is not defined. Did you forget to import 'asyncio'
+2025-08-02 23:54:06,408 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:54:09,728 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-02 23:54:09,729 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-02 23:54:09,730 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-02 23:54:09,731 - __main__ - INFO - Polling started!
+2025-08-03 00:21:25,243 - __main__ - INFO - Testing Instagram login...
+2025-08-03 00:21:28,134 - instagrapi - INFO - https://i.instagram.com/api/v1/launcher/sync/
+2025-08-03 00:21:28,136 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): i.instagram.com:443
+2025-08-03 00:21:28,422 - urllib3.connectionpool - DEBUG - https://i.instagram.com:443 "POST /api/v1/launcher/sync/ HTTP/1.1" 403 61
+2025-08-03 00:21:28,424 - instagrapi - DEBUG - private_request 403: https://i.instagram.com/api/v1/launcher/sync/ ({"message":"CSRF token missing or incorrect","status":"fail"})
+2025-08-03 00:21:28,424 - private_request - INFO - Kubgodua [403] POST https://i.instagram.com/api/v1/launcher/sync/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-08-03 00:21:28,424 - __main__ - ERROR - Error: {"message":"CSRF token missing or incorrect","status":"fail"}
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://i.instagram.com/api/v1/launcher/sync/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/test_instagram.py", line 9, in <module>
+    client = get_instagram_client()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/instagram_downloader.py", line 37, in get_instagram_client
+    cl.login(username, password)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 424, in login
+    self.pre_login_flow()
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 64, in pre_login_flow
+    self.sync_launcher(True)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 145, in sync_launcher
+    return self.private_request("launcher/sync/", data, login=login)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 550, in private_request
+    raise e
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 535, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 388, in _send_private_request
+    raise ClientForbiddenError(e, response=e.response, **last_json)
+instagrapi.exceptions.ClientForbiddenError: {"message":"CSRF token missing or incorrect","status":"fail"}
+2025-08-03 00:22:00,602 - __main__ - INFO - Starting imports in main.py...
+2025-08-03 00:22:00,700 - __main__ - INFO - os imported
+2025-08-03 00:22:00,705 - __main__ - INFO - json imported
+2025-08-03 00:22:00,705 - __main__ - INFO - time imported
+2025-08-03 00:22:01,058 - __main__ - INFO - telegram imported
+2025-08-03 00:22:01,146 - __main__ - INFO - telegram.ext imported
+2025-08-03 00:22:01,174 - __main__ - INFO - tenacity imported
+2025-08-03 00:22:01,976 - __main__ - INFO - tiktok_downloader imported
+2025-08-03 00:22:02,556 - __main__ - INFO - instagram_downloader imported
+2025-08-03 00:22:03,131 - __main__ - INFO - pinterest_downloader imported
+2025-08-03 00:22:03,133 - __main__ - INFO - error_handler imported
+2025-08-03 00:22:03,133 - __main__ - INFO - utils imported
+2025-08-03 00:22:03,133 - __main__ - INFO - telegram.error imported
+2025-08-03 00:22:03,134 - __main__ - INFO - Executing main()...
+2025-08-03 00:22:03,134 - __main__ - INFO - Entering main function...
+2025-08-03 00:22:03,134 - __main__ - INFO - Building Application...
+2025-08-03 00:22:03,724 - __main__ - INFO - Application built successfully!
+2025-08-03 00:22:03,725 - __main__ - INFO - Handlers added, starting polling...
+2025-08-03 00:22:04,041 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getMe "HTTP/1.1 200 OK"
+2025-08-03 00:22:04,141 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-03 00:22:04,143 - telegram.ext.Application - INFO - Application started
+2025-08-03 00:22:14,292 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:22:24,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:22:27,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:22:27,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-03 00:22:37,355 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:22:47,412 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:22:57,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:22:57,760 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:22:57,763 - __main__ - INFO - Отримано повідомлення: https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840, chat_type=supergroup
+2025-08-03 00:22:57,991 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-03 00:22:57,995 - __main__ - INFO - Запит до tiktok: 3/500
+2025-08-03 00:22:58,004 - tiktok_downloader - INFO - Файл InstaVieverBot/cookies.txt уже існує і є дійсним
+2025-08-03 00:22:58,006 - tiktok_downloader - INFO - Використовуємо тимчасовий файл cookies: /tmp/tmp2c4w8b23.txt
+2025-08-03 00:22:58,015 - tiktok_downloader - INFO - yt-dlp: Починаємо завантаження для https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840
+2025-08-03 00:23:03,758 - tiktok_downloader - INFO - yt-dlp: Відео збережено як InstaVieverBot/temp/temp_video_-5361552291751786258_ytdlp.mp4
+2025-08-03 00:23:03,759 - tiktok_downloader - INFO - Час виконання yt-dlp для https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840: 5.75 секунд
+2025-08-03 00:23:03,978 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:04,778 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendVideo "HTTP/1.1 200 OK"
+2025-08-03 00:23:04,799 - __main__ - INFO - Відео успішно надіслано для https://www.tiktok.com/@daxa_xaxa/video/7511321933691030840
+2025-08-03 00:23:06,475 - __main__ - INFO - Видаляємо повідомлення: message_id=345
+2025-08-03 00:23:06,585 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/deleteMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:06,599 - __main__ - INFO - Видаляємо повідомлення: message_id=346
+2025-08-03 00:23:06,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/deleteMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:06,796 - __main__ - INFO - Відправляємо фінальне повідомлення 'Виконано за допомогою @InstaViewerBot'
+2025-08-03 00:23:06,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:07,849 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:23:17,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:23:28,112 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:23:29,851 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:23:29,861 - __main__ - INFO - Отримано повідомлення: https://www.instagram.com/p/DMuhUbjoTmE/, chat_type=supergroup
+2025-08-03 00:23:30,193 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:30,204 - __main__ - INFO - Запит до instagram: 4/50
+2025-08-03 00:23:31,318 - instagrapi - INFO - https://i.instagram.com/api/v1/launcher/sync/
+2025-08-03 00:23:31,759 - private_request - INFO - Kubgodua [403] POST https://i.instagram.com/api/v1/launcher/sync/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-08-03 00:23:31,760 - instagram_downloader - ERROR - Помилка instagrapi: {"message":"CSRF token missing or incorrect","status":"fail"}
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://i.instagram.com/api/v1/launcher/sync/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/instagram_downloader.py", line 46, in download_instagram
+    cl = get_instagram_client()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/instagram_downloader.py", line 37, in get_instagram_client
+    cl.login(username, password)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 424, in login
+    self.pre_login_flow()
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 64, in pre_login_flow
+    self.sync_launcher(True)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 145, in sync_launcher
+    return self.private_request("launcher/sync/", data, login=login)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 550, in private_request
+    raise e
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 535, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 388, in _send_private_request
+    raise ClientForbiddenError(e, response=e.response, **last_json)
+instagrapi.exceptions.ClientForbiddenError: {"message":"CSRF token missing or incorrect","status":"fail"}
+2025-08-03 00:23:31,906 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:34,017 - __main__ - INFO - Видаляємо повідомлення: message_id=350
+2025-08-03 00:23:34,160 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/deleteMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:34,162 - __main__ - INFO - Відправляємо фінальне повідомлення 'Виконано за допомогою @InstaViewerBot'
+2025-08-03 00:23:34,356 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/sendMessage "HTTP/1.1 200 OK"
+2025-08-03 00:23:39,992 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:23:50,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:23:54,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7904655150:AAEsblS0W-qkegCbWu7TgpsyeGPr_645fMA/getUpdates "HTTP/1.1 200 OK"
+2025-08-03 00:23:54,121 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-03 00:23:54,122 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-03 00:23:54,123 - __main__ - INFO - Polling started!
+2025-08-03 01:02:57,125 - __main__ - INFO - Testing Instagram login...
+2025-08-03 01:02:57,126 - instagram_downloader - DEBUG - Використовуємо username: Kubgodua
+2025-08-03 01:02:57,126 - instagram_downloader - DEBUG - Використовуємо user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1
+2025-08-03 01:02:57,127 - instagrapi - INFO - https://i.instagram.com/api/v1/launcher/sync/
+2025-08-03 01:02:57,129 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): i.instagram.com:443
+2025-08-03 01:02:57,394 - urllib3.connectionpool - DEBUG - https://i.instagram.com:443 "POST /api/v1/launcher/sync/ HTTP/1.1" 403 61
+2025-08-03 01:02:57,396 - instagrapi - DEBUG - private_request 403: https://i.instagram.com/api/v1/launcher/sync/ ({"message":"CSRF token missing or incorrect","status":"fail"})
+2025-08-03 01:02:57,396 - private_request - INFO - Kubgodua [403] POST https://i.instagram.com/api/v1/launcher/sync/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-08-03 01:02:57,397 - __main__ - ERROR - Error: {"message":"CSRF token missing or incorrect","status":"fail"}
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://i.instagram.com/api/v1/launcher/sync/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/test_instagram.py", line 9, in <module>
+    client = get_instagram_client()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/InstaVieverBot/instagram_downloader.py", line 41, in get_instagram_client
+    cl.login(username, password)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 424, in login
+    self.pre_login_flow()
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 64, in pre_login_flow
+    self.sync_launcher(True)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/auth.py", line 145, in sync_launcher
+    return self.private_request("launcher/sync/", data, login=login)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 550, in private_request
+    raise e
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 535, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "/home/gaijin/Документи/Telegram/instagram_bot_env/lib/python3.12/site-packages/instagrapi/mixins/private.py", line 388, in _send_private_request
+    raise ClientForbiddenError(e, response=e.response, **last_json)
+instagrapi.exceptions.ClientForbiddenError: {"message":"CSRF token missing or incorrect","status":"fail"}
