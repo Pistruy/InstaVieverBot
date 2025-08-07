@@ -16,3 +16,5 @@ venv/
 env/
 *_env/
 .env
+bot_ai_start_promt.txt
+bot_structure.txt
