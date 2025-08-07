@@ -10,3 +10,9 @@ Install_libraries_bot_Install.txt
 Box
 request_counts.json
 stats.json
+__pycache__/
+*.pyc
+venv/
+env/
+*_env/
+.env
