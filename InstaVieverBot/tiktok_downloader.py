@@ -9,9 +9,9 @@ import ffmpeg
 import json
 import time
 import tempfile
+from utils import get_random_user_agent, get_random_delay
 
 logger = logging.getLogger(__name__)
-
 url_cache = {}
 
 async def generate_cookies_with_login():
@@ -21,17 +21,15 @@ async def generate_cookies_with_login():
     if not username or not password:
         logger.warning("TIKTOK_USERNAME або TIKTOK_PASSWORD не встановлено")
         return False
-
     logger.info("Генеруємо cookies через авторизацію")
     try:
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=False)
-            context = await browser.new_context(
-                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            )
+            browser = await p.chromium.launch(headless=True)
+            context = await browser.new_context(user_agent=get_random_user_agent())
             page = await context.new_page()
             await page.goto('https://www.tiktok.com/login/phone-or-email/email', timeout=60000)
             await page.wait_for_load_state('networkidle', timeout=60000)
+            await asyncio.sleep(get_random_delay())
             logger.info("Заповнюємо форму логіну")
             await page.fill('input[name="username"]', username)
             await page.fill('input[name="password"]', password)
@@ -58,7 +56,6 @@ async def convert_cookies_to_netscape(cookies_json='InstaVieverBot/cookies.json'
     if not os.path.exists(cookies_json):
         logger.warning(f"Файл {cookies_json} не знайдено")
         return False
-
     try:
         with open(cookies_json, 'r') as f:
             data = json.load(f)
@@ -86,7 +83,6 @@ async def generate_cookies_if_needed():
     """Генерує cookies.txt, якщо він відсутній або некоректний."""
     cookies_txt = 'InstaVieverBot/cookies.txt'
     cookies_json = 'InstaVieverBot/cookies.json'
-
     if os.path.exists(cookies_txt) and os.path.getsize(cookies_txt) > 100:
         logger.info(f"Файл {cookies_txt} уже існує і є дійсним")
         try:
@@ -96,7 +92,6 @@ async def generate_cookies_if_needed():
                     return True
         except Exception as e:
             logger.warning(f"Помилка читання {cookies_txt}: {e}")
-
     logger.info(f"Перевіряємо наявність {cookies_json}")
     if os.path.exists(cookies_json):
         logger.info(f"Знайдено {cookies_json}, конвертуємо в {cookies_txt}")
@@ -104,11 +99,9 @@ async def generate_cookies_if_needed():
             return True
         else:
             logger.warning(f"Не вдалося конвертувати {cookies_json}, не видаляємо для діагностики")
-
     if os.path.exists(cookies_txt):
         logger.info(f"Файл {cookies_txt} порожній або некоректний, видаляємо")
         os.remove(cookies_txt)
-
     if await generate_cookies_with_login():
         if await convert_cookies_to_netscape():
             return True
@@ -119,13 +112,11 @@ async def resolve_short_url(url: str) -> str:
     """Розгортає коротке посилання (наприклад, vm.tiktok.com) у повне."""
     if 'vm.tiktok.com' not in url:
         return url
-
     if url in url_cache:
         logger.info(f"URL знайдено в кеші: {url} -> {url_cache[url]}")
         return url_cache[url]
-
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'User-Agent': get_random_user_agent(),
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.5',
     }
@@ -138,8 +129,8 @@ async def resolve_short_url(url: str) -> str:
         except json.JSONDecodeError as e:
             logger.error(f"Помилка формату JSON у {cookies_json}: {e}")
             cookies = {}
-
     async def try_httpx():
+        await asyncio.sleep(get_random_delay())
         async with httpx.AsyncClient(follow_redirects=True, timeout=5) as client:
             try:
                 response = await client.get(url, headers=headers, cookies=cookies)
@@ -159,13 +150,13 @@ async def resolve_short_url(url: str) -> str:
             except httpx.HTTPError as e:
                 logger.warning(f"Помилка httpx при розгортанні URL {url}: {e}")
                 return None
-
     async def try_playwright():
+        await asyncio.sleep(get_random_delay())
         try:
             async with async_playwright() as p:
                 browser = await p.chromium.launch(headless=True)
                 context = await browser.new_context(
-                    user_agent=headers['User-Agent'],
+                    user_agent=get_random_user_agent(),
                     extra_http_headers=headers
                 )
                 if cookies:
@@ -197,7 +188,6 @@ async def resolve_short_url(url: str) -> str:
         except Exception as e:
             logger.warning(f"Помилка playwright при розгортанні URL {url}: {e}")
             return None
-
     results = await asyncio.gather(try_httpx(), try_playwright(), return_exceptions=True)
     for result in results:
         if isinstance(result, str) and '/video/' in result:
@@ -205,15 +195,84 @@ async def resolve_short_url(url: str) -> str:
             return result
     raise ValueError("Не вдалося знайти URL відео в HTML")
 
+async def compress_video(input_path: str, output_path: str) -> bool:
+    """Стискає відео, якщо воно більше 50 МБ."""
+    try:
+        stream = ffmpeg.input(input_path)
+        stream = ffmpeg.output(stream, output_path, vcodec='libx264', acodec='aac', video_bitrate='1M', audio_bitrate='128k', format='mp4')
+        ffmpeg.run(stream, overwrite_output=True, quiet=True)
+        logger.info(f"Відео стиснуто: {output_path}")
+        return True
+    except Exception as e:
+        logger.error(f"Помилка стиснення відео: {e}")
+        return False
+
+async def download_tiktok_ytdlp(url: str, use_cookies: bool = True) -> tuple[bool, str, str]:
+    """Завантажує відео з TikTok через yt-dlp."""
+    await asyncio.sleep(get_random_delay())
+    start_time = time.time()
+    try:
+        output_template = f'InstaVieverBot/temp/temp_video_{hash(url)}_ytdlp.%(ext)s'
+        ydl_opts = {
+            'outtmpl': output_template,
+            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
+            'quiet': False,
+            'noplaylist': True,
+            'merge_output_format': 'mp4',
+            'user_agent': get_random_user_agent(),
+        }
+        cookies_txt = 'InstaVieverBot/cookies.txt'
+        if use_cookies:
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as temp_cookies:
+                if os.path.exists(cookies_txt):
+                    with open(cookies_txt, 'r') as f:
+                        temp_cookies.write(f.read())
+                else:
+                    await convert_cookies_to_netscape(cookies_txt=temp_cookies.name)
+                ydl_opts['cookiefile'] = temp_cookies.name
+                logger.info(f"Використовуємо тимчасовий файл cookies: {temp_cookies.name}")
+       
+        logger.info(f"yt-dlp: Починаємо завантаження для {url}")
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(url, download=True)
+            video_path = ydl.prepare_filename(info)
+            logger.info(f"yt-dlp: Відео збережено як {video_path}")
+            if os.path.getsize(video_path) > 50 * 1024 * 1024:
+                logger.info("Файл занадто великий (>50 МБ), стискаємо")
+                compressed_path = video_path.replace('.mp4', '_compressed.mp4')
+                if await compress_video(video_path, compressed_path):
+                    os.remove(video_path)
+                    video_path = compressed_path
+                else:
+                    os.remove(video_path)
+                    return False, "", "Не вдалося стиснути відео"
+            if 'cookiefile' in ydl_opts:
+                os.remove(ydl_opts['cookiefile'])
+            logger.info(f"Час виконання yt-dlp для {url}: {time.time() - start_time:.2f} секунд")
+            return True, video_path, ""
+    except yt_dlp.utils.DownloadError as e:
+        logger.error(f"yt-dlp: Помилка завантаження: {e}", exc_info=True)
+        if 'cookiefile' in ydl_opts:
+            os.remove(ydl_opts['cookiefile'])
+        if "This video is private" in str(e):
+            return False, "", "Це відео приватне або обмежене."
+        elif "Your IP address is blocked" in str(e):
+            return False, "", "Ваш IP-адресу заблоковано для цього відео."
+        return False, "", f"Помилка yt-dlp: {str(e)}"
+    except Exception as e:
+        logger.error(f"Помилка yt-dlp для {url}: {e}", exc_info=True)
+        if 'cookiefile' in ydl_opts:
+            os.remove(ydl_opts['cookiefile'])
+        return False, "", f"Помилка: {str(e)}"
+
 async def download_tiktok_playwright(url: str) -> tuple[bool, str, str]:
     """Завантажує відео через Playwright, якщо yt-dlp не спрацював."""
+    await asyncio.sleep(get_random_delay())
     start_time = time.time()
     try:
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
-            context = await browser.new_context(
-                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            )
+            context = await browser.new_context(user_agent=get_random_user_agent())
             cookies_json = 'InstaVieverBot/cookies.json'
             if os.path.exists(cookies_json):
                 try:
@@ -244,18 +303,18 @@ async def download_tiktok_playwright(url: str) -> tuple[bool, str, str]:
                 await context.close()
                 await browser.close()
                 return False, "", "Не вдалося отримати URL відео"
-            
+           
             async with httpx.AsyncClient() as client:
                 response = await client.get(video_url, timeout=10)
                 if response.status_code != 200:
                     await context.close()
                     await browser.close()
                     return False, "", f"Помилка завантаження відео: HTTP {response.status_code}"
-                
+               
                 output_path = f'InstaVieverBot/temp/temp_video_{hash(url)}_playwright.mp4'
                 with open(output_path, 'wb') as f:
                     f.write(response.content)
-                
+               
                 if os.path.getsize(output_path) > 50 * 1024 * 1024:
                     logger.info("Файл занадто великий (>50 МБ), стискаємо")
                     compressed_path = output_path.replace('.mp4', '_compressed.mp4')
@@ -267,7 +326,7 @@ async def download_tiktok_playwright(url: str) -> tuple[bool, str, str]:
                         await context.close()
                         await browser.close()
                         return False, "", "Не вдалося стиснути відео"
-                
+               
                 await context.close()
                 await browser.close()
                 logger.info(f"Playwright: Відео збережено як {output_path}")
@@ -280,86 +339,20 @@ async def download_tiktok_playwright(url: str) -> tuple[bool, str, str]:
         logger.error(f"Помилка Playwright при завантаженні відео {url}: {e}", exc_info=True)
         return False, "", f"Помилка завантаження через Playwright: {str(e)}"
 
-async def compress_video(input_path: str, output_path: str) -> bool:
-    """Стискає відео, якщо воно більше 50 МБ."""
-    try:
-        stream = ffmpeg.input(input_path)
-        stream = ffmpeg.output(stream, output_path, vcodec='libx264', acodec='aac', video_bitrate='1M', audio_bitrate='128k', format='mp4')
-        ffmpeg.run(stream, overwrite_output=True, quiet=True)
-        logger.info(f"Відео стиснуто: {output_path}")
-        return True
-    except Exception as e:
-        logger.error(f"Помилка стиснення відео: {e}")
-        return False
-
-async def download_tiktok_ytdlp(url: str, use_cookies: bool = True) -> tuple[bool, str, str]:
-    """Завантажує відео з TikTok через yt-dlp."""
-    start_time = time.time()
-    try:
-        output_template = f'InstaVieverBot/temp/temp_video_{hash(url)}_ytdlp.%(ext)s'
-        ydl_opts = {
-            'outtmpl': output_template,
-            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
-            'quiet': False,
-            'noplaylist': True,
-            'merge_output_format': 'mp4',
-        }
-        cookies_txt = 'InstaVieverBot/cookies.txt'
-        if use_cookies:
-            with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as temp_cookies:
-                if os.path.exists(cookies_txt):
-                    with open(cookies_txt, 'r') as f:
-                        temp_cookies.write(f.read())
-                else:
-                    await convert_cookies_to_netscape(cookies_txt=temp_cookies.name)
-                ydl_opts['cookiefile'] = temp_cookies.name
-                logger.info(f"Використовуємо тимчасовий файл cookies: {temp_cookies.name}")
-        
-        logger.info(f"yt-dlp: Починаємо завантаження для {url}")
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(url, download=True)
-            video_path = ydl.prepare_filename(info)
-            logger.info(f"yt-dlp: Відео збережено як {video_path}")
-
-            if os.path.getsize(video_path) > 50 * 1024 * 1024:
-                logger.info("Файл занадто великий (>50 МБ), стискаємо")
-                compressed_path = video_path.replace('.mp4', '_compressed.mp4')
-                if await compress_video(video_path, compressed_path):
-                    os.remove(video_path)
-                    video_path = compressed_path
-                else:
-                    os.remove(video_path)
-                    return False, "", "Не вдалося стиснути відео"
-
-            if 'cookiefile' in ydl_opts:
-                os.remove(ydl_opts['cookiefile'])
-            logger.info(f"Час виконання yt-dlp для {url}: {time.time() - start_time:.2f} секунд")
-            return True, video_path, ""
-    except yt_dlp.utils.DownloadError as e:
-        logger.error(f"yt-dlp: Помилка завантаження: {e}", exc_info=True)
-        if 'cookiefile' in ydl_opts:
-            os.remove(ydl_opts['cookiefile'])
-        if "This video is private" in str(e):
-            return False, "", "Це відео приватне або обмежене."
-        elif "Your IP address is blocked" in str(e):
-            return False, "", "Ваш IP-адресу заблоковано для цього відео."
-        return False, "", f"Помилка yt-dlp: {str(e)}"
-    except Exception as e:
-        logger.error(f"Помилка yt-dlp для {url}: {e}", exc_info=True)
-        if 'cookiefile' in ydl_opts:
-            os.remove(ydl_opts['cookiefile'])
-        return False, "", f"Помилка: {str(e)}"
-
-async def download_tiktok(url: str) -> tuple[bool, str, str]:
+async def download_tiktok(url: str) -> dict:
     """Основна функція для завантаження TikTok відео."""
     await generate_cookies_if_needed()
     try:
         resolved_url = await resolve_short_url(url)
         success, file_path, error = await download_tiktok_ytdlp(resolved_url)
         if success:
-            return success, file_path, error
+            return {'type': 'video', 'url': file_path}
         logger.info("Спроба завантаження через Playwright через помилку yt-dlp")
-        return await download_tiktok_playwright(resolved_url)
+        success, file_path, error = await download_tiktok_playwright(resolved_url)
+        if success:
+            return {'type': 'video', 'url': file_path}
+        logger.error(f"Помилка завантаження TikTok {url}: {error}")
+        return None
     except Exception as e:
         logger.error(f"Помилка завантаження TikTok {url}: {e}", exc_info=True)
-        return False, "", f"Помилка: {str(e)}"
+        return None

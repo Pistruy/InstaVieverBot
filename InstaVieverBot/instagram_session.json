@@ -1,0 +1,42 @@
+{
+    "uuids": {
+        "phone_id": "a227db14-c0e0-4977-8bc7-35edd50d5704",  // Залиште як є або генеруйте випадково
+        "uuid": "6abd52ff-45a7-40af-a985-cf69563edf9b",
+        "client_session_id": "8ea1e20f-a297-46cd-a269-ea8f2516d8ba",
+        "advertising_id": "fc6292ea-bc11-463b-967b-7dc2b016ab12",
+        "android_device_id": "android-af29838e4e62cec2",
+        "request_id": "62a8a9f9-572b-493b-bddd-828d9a9a6624",
+        "tray_session_id": "342a47b5-c30f-4c65-936f-baf983d3f72a"
+    },
+    "mid": "aH6V5wAEAAFF8uf9gf6_p86aO3n4",
+    "ig_u_rur": "your_rur_value_from_cookies",
+    "ig_www_claim": null,
+    "authorization_data": {
+        "ds_user_id": "74783813293",
+        "sessionid": "74783813293:wabeG4G96HXH0f:15:AYcNKUhjP9h3hMBu7eASKZMB1jUp3jOarCnHUkKX9w"
+    },
+    "cookies": {
+        "csrftoken": "NlH5a8sOclG3JbEjnfrhNWCNNFycPFrS",
+        "mid": "aH6V5wAEAAFF8uf9gf6_p86aO3n4",
+        "ig_did": "2D0B817C-EDF0-45D8-8BEC-0475F28C2F05",
+        "rur": "LDC\05474783813293\0541786736593:01fe2a6a74bf4a2ad512918f9e88bc3cf8d881a9b0a086fb822f9fc7cdb3dd0d4dd067a6"
+    },
+    "last_login": 1755201598,  // Поточний час у Unix timestamp (використовуйте python -c "import time; print(int(time.time()))")
+    "device_settings": {
+        "app_version": "269.0.0.18.75",
+        "android_version": 26,
+        "android_release": "8.0.0",
+        "dpi": "480dpi",
+        "resolution": "1080x1920",
+        "manufacturer": "OnePlus",
+        "device": "devitron",
+        "model": "6T Dev",
+        "cpu": "qcom",
+        "version_code": "314665256"
+    },
+    "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0",
+    "country": "US",
+    "country_code": 1,
+    "locale": "en_US",
+    "timezone_offset": -14400
+}
